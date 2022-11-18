@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<VBox alignment="CENTER" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17.0.2-ea"
+      xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.prince_018_lab4.ViewController">
+    <Pane prefHeight="600.0" prefWidth="800.0">
+        <ComboBox fx:id="item_name_cb" layoutX="65.0" layoutY="267.0" onAction="#onActionItemNamesCB" prefWidth="150.0"
+                  promptText="Choose Item"/>
+        <ComboBox fx:id="item_quantity_cb" disable="true" layoutX="65.0" layoutY="320.0" prefWidth="150.0"
+                  promptText="Quantity"/>
+        <Label layoutX="219.0" layoutY="24.0" text="Real Canadian Superstore">
+            <font>
+                <Font name="Verdana Bold" size="25.0"/>
+            </font>
+        </Label>
+        <Button layoutX="105.0" layoutY="367.0" mnemonicParsing="false" onAction="#onActionAddtoCartBtn"
+                text="Add to Cart"/>
+        <TextArea fx:id="textArea" editable="false" layoutX="269.0" layoutY="112.0" prefHeight="436.0"
+                  prefWidth="262.0"/>
+        <TextField fx:id="customerNameTxt" layoutX="593.0" layoutY="209.0" promptText="Customer Name"/>
+        <TextField fx:id="customerPhoneTxt" layoutX="593.0" layoutY="257.0" promptText="Customer Phone No"/>
+        <TextField fx:id="customerAddressTxt" layoutX="593.0" layoutY="307.0" promptText="Address"/>
+        <RadioButton layoutX="593.0" layoutY="354.0" mnemonicParsing="false" selected="true"
+                     text="Pick-up">
+            <toggleGroup>
+                <ToggleGroup fx:id="DeliveryMethod"/>
+            </toggleGroup>
+        </RadioButton>
+        <RadioButton fx:id="deliveryRB" layoutX="677.0" layoutY="354.0" mnemonicParsing="false" text="Delivery"
+                     toggleGroup="$DeliveryMethod"/>
+        <Button layoutX="628.0" layoutY="406.0" mnemonicParsing="false"
+                onAction="#onActionPlaceOrderBtn" text="Place Order"/>
+    </Pane>
+</VBox>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.prince_018_lab4.InvoiceController">
+    <Pane prefHeight="600.0" prefWidth="800.0">
+        <Label layoutX="219.0" layoutY="24.0" text="Real Canadian Superstore">
+            <font>
+                <Font name="Verdana Bold" size="25.0" />
+            </font>
+        </Label>
+        <Label layoutX="244.0" layoutY="77.0" text="Thank You for placing an order with us!">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <Label fx:id="customerName" layoutX="500.0" layoutY="230.0" text="PRINCE PATEL">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Label>
+        <Label layoutX="500.0" layoutY="200.0" text="Customer Details :">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Label>
+        <Label layoutX="50.0" layoutY="200.0" maxWidth="100.0" minWidth="100.0" prefWidth="100.0" text="Name">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER_RIGHT" layoutX="100.0" layoutY="200.0" maxWidth="100.0" minWidth="100.0" prefWidth="100.0" text="Price" textAlignment="RIGHT">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER_RIGHT" layoutX="200.0" layoutY="200.0" maxWidth="100.0" minWidth="100.0" prefWidth="100.0" text="Quantity" textAlignment="RIGHT">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER_RIGHT" layoutX="300.0" layoutY="200.0" maxWidth="100.0" minWidth="100.0" prefWidth="100.0" text="Amount" textAlignment="RIGHT">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Label>
+        <Label fx:id="itemNames" layoutX="50.0" layoutY="240.0" maxWidth="100.0" minWidth="100.0" prefWidth="100.0">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Label>
+        <Label fx:id="itemPrices" alignment="CENTER_RIGHT" layoutX="100.0" layoutY="240.0" maxWidth="100.0" minWidth="100.0" prefWidth="100.0" textAlignment="RIGHT">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Label>
+        <Label fx:id="itemQuantities" alignment="CENTER_RIGHT" layoutX="200.0" layoutY="240.0" maxWidth="100.0" minWidth="100.0" prefWidth="100.0" textAlignment="RIGHT">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Label>
+        <Label fx:id="itemTotals" alignment="CENTER_RIGHT" layoutX="300.0" layoutY="240.0" maxWidth="100.0" minWidth="100.0" prefWidth="100.0" textAlignment="RIGHT">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Label>
+        <Label fx:id="orderTotal" alignment="CENTER_RIGHT" layoutX="300.0" layoutY="380.0" maxWidth="100.0" minWidth="100.0" prefWidth="100.0" text="\$1240.95" textAlignment="RIGHT">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Label>
+        <Line endX="350.0" layoutX="50.0" layoutY="375.0" />
+        <Line endX="350.0" layoutX="50.0" layoutY="230.0" />
+        <Label layoutX="50.0" layoutY="380.0" maxWidth="100.0" minWidth="100.0" prefWidth="100.0" text="Order Total">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Label>
+        <Label layoutX="50.0" layoutY="410.0" maxWidth="100.0" minWidth="100.0" prefWidth="100.0" text="Tax (10%)">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Label>
+        <Label fx:id="tax" alignment="CENTER_RIGHT" layoutX="300.0" layoutY="410.0" maxWidth="100.0" minWidth="100.0" prefWidth="100.0" text="\$1240.95" textAlignment="RIGHT">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Label>
+        <Label layoutX="50.0" layoutY="440.0" maxWidth="120.0" minWidth="120.0" prefWidth="120.0" text="Shipping Fees">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Label>
+        <Label fx:id="shipping" alignment="CENTER_RIGHT" layoutX="300.0" layoutY="440.0" maxWidth="100.0" minWidth="100.0" prefWidth="100.0" text="\$1240.95" textAlignment="RIGHT">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Label>
+        <Label fx:id="amountToPay" alignment="CENTER_RIGHT" layoutX="300.0" layoutY="480.0" maxWidth="100.0" minWidth="100.0" prefWidth="100.0" text="\$1240.95" textAlignment="RIGHT">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Label>
+        <Line endX="350.0" layoutX="50.0" layoutY="470.0" />
+        <Label layoutX="50.0" layoutY="480.0" maxWidth="150.0" minWidth="150.0" prefWidth="150.0" text="Amount To Pay">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Label>
+        <Label fx:id="customerAddress" layoutX="500.0" layoutY="260.0" text="PRINCE PATEL">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Label>
+        <Label fx:id="customerPhone" layoutX="500.0" layoutY="290.0" text="PRINCE PATEL">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Label>
+      <Button layoutX="706.0" layoutY="541.0" mnemonicParsing="false" onAction="#returnToHome" text="Return">
+         <font>
+            <Font name="Verdana" size="13.0" />
+         </font>
+      </Button>
+    </Pane>
+</VBox>
